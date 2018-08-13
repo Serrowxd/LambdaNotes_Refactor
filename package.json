@@ -1,0 +1,20 @@
+{
+  "name": "LambdaNotes_Refactor",
+  "version": "1.0.0",
+  "description": "A new and improved Lambda Notes done post-graduation from Lambda.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serrowxd/LambdaNotes_Refactor.git"
+  },
+  "keywords": [],
+  "author": "Kevin Jolley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serrowxd/LambdaNotes_Refactor/issues"
+  },
+  "homepage": "https://github.com/Serrowxd/LambdaNotes_Refactor#readme"
+}
