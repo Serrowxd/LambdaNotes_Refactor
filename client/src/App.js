@@ -1,19 +1,41 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Column, Row, Cards, CardContainer } from './reducer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Container>
+        <Row justify="space-between">
+          <Column
+            background="lightblue"
+            justify="space-around"
+            pad="5rem"
+            textalign="center"
+          >
+            <h1> OwO Notes </h1>
+            <Column>
+              <h1> New Note </h1>
+              <h1> View Notes </h1>
+            </Column>
+            <h1> Logout </h1>
+          </Column>
+
+          <CardContainer>
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+          </CardContainer>
+        </Row>
+      </Container>
     );
   }
 }
