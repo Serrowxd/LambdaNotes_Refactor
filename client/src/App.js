@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Row justify="space-between">
+        <Row>
           <Column
             background="lightblue"
             justify="space-around"
@@ -20,20 +20,25 @@ class App extends Component {
             <h1> Logout </h1>
           </Column>
 
-          <CardContainer>
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-          </CardContainer>
+          <Column width="100%">
+            <Row background="lightgray">
+              <h1> Your Cards: </h1>
+            </Row>
+            <CardContainer>
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+            </CardContainer>
+          </Column>
         </Row>
       </Container>
     );

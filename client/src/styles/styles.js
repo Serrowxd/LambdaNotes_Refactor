@@ -9,12 +9,13 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   background-color: ${props => props.background};
   flex-wrap: ${props => props.wrap};
   justify-content: ${props => props.justify};
+  padding-top: ${props => props.pad};
+  padding-bottom: ${props => props.pad};
 `;
 
 export const Column = styled.div`
@@ -34,21 +35,10 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   height: auto;
   justify-content: space-around;
-  width: 80%;
+  width: 95 %;
   align-self: center;
-`;
-
-export const StyledCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: ${props => props.background};
-  padding: ${props => props.pad};
-  justify-content: center;
-  text-align: center;
-
-  width: 350px;
-  height: 250px;
+  position: relative;
+  overflow: hidden;
 `;
