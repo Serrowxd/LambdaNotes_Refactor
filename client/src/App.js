@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Column, Row, Cards, CardContainer } from './reducer';
+import {
+  Container,
+  Column,
+  Row,
+  Cards,
+  CardContainer,
+  Button,
+} from './reducer';
 
 class App extends Component {
   render() {
@@ -14,10 +21,10 @@ class App extends Component {
           >
             <h1> OwO Notes </h1>
             <Column>
-              <h1> New Note </h1>
-              <h1> View Notes </h1>
+              <Button margin="2rem"> New Note </Button>
+              <Button> View Notes </Button>
             </Column>
-            <h1> Logout </h1>
+            <Button> Login / Logout </Button>
           </Column>
 
           <Column width="100%">

@@ -40,3 +40,35 @@ export const CardContainer = styled.div`
   position: relative;
   overflow: auto;
 `;
+
+export const Button = styled.button`
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  margin-bottom: ${props => props.margin};
+
+  /* Ripple */
+
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #f35d21ad;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+
+  background-position: center;
+  transition: background 0.8s;
+
+  &:hover {
+    background: #f35d21f1 radial-gradient(circle, transparent 1%, #f35d21f1 1%)
+      center/15000%;
+  }
+  &:active {
+    background-color: #f76e6e;
+    background-size: 100%;
+    transition: background 0s;
+  }
+`;

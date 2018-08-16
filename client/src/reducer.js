@@ -9,6 +9,7 @@ import {
   Row,
   StyledCard,
   CardContainer,
+  Button,
 } from './styles/styles';
 
 export {
@@ -21,4 +22,5 @@ export {
   Row,
   StyledCard,
   CardContainer,
+  Button,
 };
