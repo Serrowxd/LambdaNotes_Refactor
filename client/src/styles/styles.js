@@ -16,6 +16,7 @@ export const Row = styled.div`
   justify-content: ${props => props.justify};
   padding-top: ${props => props.pad};
   padding-bottom: ${props => props.pad};
+  padding: ${props => props.padall};
 `;
 
 export const Column = styled.div`

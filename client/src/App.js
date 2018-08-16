@@ -16,10 +16,10 @@ class App extends Component {
           <Column
             background="lightblue"
             justify="space-around"
-            pad="5rem"
+            pad="2rem"
             textalign="center"
           >
-            <h1> OwO Notes </h1>
+            <h1 class="headertext"> Notes </h1>
             <Column>
               <Button margin="2rem"> New Note </Button>
               <Button> View Notes </Button>
@@ -28,8 +28,8 @@ class App extends Component {
           </Column>
 
           <Column width="100%">
-            <Row background="lightgray">
-              <h1> Your Cards: </h1>
+            <Row background="lightgray" padall="1rem">
+              <h1> Cards: </h1>
             </Row>
             <CardContainer>
               <Cards />
