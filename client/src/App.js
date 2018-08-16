@@ -32,11 +32,6 @@ class App extends Component {
               <Cards />
               <Cards />
               <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
             </CardContainer>
           </Column>
         </Row>

@@ -36,9 +36,7 @@ export const CardContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
-  justify-content: space-around;
-  width: 95 %;
-  align-self: center;
+  width: 95%;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 `;
