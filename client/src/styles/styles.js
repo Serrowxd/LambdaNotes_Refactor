@@ -36,8 +36,8 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: auto;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   position: relative;
   overflow: auto;
 `;

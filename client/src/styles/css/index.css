@@ -3,6 +3,9 @@
   width: 350px;
   margin: 0.5rem;
 }
+.card .card-body {
+  overflow: hidden;
+}
 .headertext {
   font-size: 5rem;
 }
