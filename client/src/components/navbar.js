@@ -39,14 +39,18 @@ class Navigation extends Component {
               New Note{' '}
             </Button>
 
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              className="button_style"
+            >
               {' '}
               View Notes{' '}
             </Button>
           </MuiThemeProvider>
         </Column>
         <MuiThemeProvider theme={theme}>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="primary" className="button_style">
             {' '}
             Login / Logout{' '}
           </Button>

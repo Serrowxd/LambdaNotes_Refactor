@@ -1,3 +1,7 @@
+body.preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+}
 .card {
   height: 350px;
   width: 350px;
@@ -11,5 +15,30 @@
 }
 .button_style {
   width: 20rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
   height: 4rem !important;
+}
+.none {
+  animation: hide 0.5s forwards;
+}
+.display {
+  animation: render 0.5s forwards;
+}
+@keyframes render {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }

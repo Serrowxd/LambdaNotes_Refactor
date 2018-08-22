@@ -87,3 +87,16 @@ export const LandingRow = styled.div`
     font-size: 10rem;
   }
 `;
+
+export const LandingRender = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 80%;
+  height: 35rem;
+  background-color: #eeeeee;
+  border-radius: 50px;
+  text-align: center;
+  position: absolute;
+`;

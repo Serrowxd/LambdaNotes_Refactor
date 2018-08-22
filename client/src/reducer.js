@@ -12,6 +12,7 @@ import {
   CardContainer,
   Button,
   LandingRow,
+  LandingRender,
 } from './styles/styles';
 
 export {
@@ -28,4 +29,5 @@ export {
   CardContainer,
   Button,
   LandingRow,
+  LandingRender,
 };
