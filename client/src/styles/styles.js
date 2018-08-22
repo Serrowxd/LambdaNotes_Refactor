@@ -5,6 +5,8 @@ export const Container = styled.div`
   width: 100%:
   max-width: 1920px;
   height: 100vh;
+
+  transition: all 0.5s ease;
 `;
 
 export const Row = styled.div`
@@ -72,5 +74,16 @@ export const Button = styled.button`
     background-color: #f76e6e;
     background-size: 100%;
     transition: background 0s;
+  }
+`;
+
+export const LandingRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+
+  h1 {
+    font-size: 10rem;
   }
 `;

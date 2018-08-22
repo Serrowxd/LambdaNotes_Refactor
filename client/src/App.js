@@ -10,15 +10,18 @@ import {
   Noteview,
 } from './reducer';
 
+import Landing from './containers/Landing';
+
 class App extends Component {
   render() {
     return (
       <Container>
-        <Row>
-          <Navigation />
+        <Landing />
 
+        {/* <Row>
+          <Navigation />
           <Noteview />
-        </Row>
+        </Row> */}
       </Container>
     );
   }

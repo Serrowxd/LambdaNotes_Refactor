@@ -11,6 +11,7 @@ import {
   StyledCard,
   CardContainer,
   Button,
+  LandingRow,
 } from './styles/styles';
 
 export {
@@ -26,4 +27,5 @@ export {
   StyledCard,
   CardContainer,
   Button,
+  LandingRow,
 };
