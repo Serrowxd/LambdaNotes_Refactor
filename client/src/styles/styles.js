@@ -30,6 +30,7 @@ export const Column = styled.div`
   text-align: ${props => props.textalign};
   width: ${props => props.width};
   flex-wrap: ${props => props.wrap};
+  height: ${props => props.height};
 `;
 
 export const CardContainer = styled.div`

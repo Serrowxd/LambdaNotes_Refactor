@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
-import { Column, Button } from '../reducer';
+import { Column } from '../reducer';
+import Button from '@material-ui/core/Button';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+import orange from '@material-ui/core/colors/orange';
 
 class Navigation extends Component {
   render() {
+    const theme = createMuiTheme({
+      palette: {
+        primary: orange,
+      },
+      overrides: {
+        MuiButton: {
+          raisedPrimary: {
+            color: 'white',
+          },
+        },
+      },
+    });
+
     return (
       <Column
         background="lightblue"
@@ -11,11 +27,30 @@ class Navigation extends Component {
         textalign="center"
       >
         <h1 class="headertext"> Notes </h1>
-        <Column>
-          <Button margin="2rem"> New Note </Button>
-          <Button> View Notes </Button>
+        <Column justify="space-evenly" height="10rem">
+          <MuiThemeProvider theme={theme}>
+            <Button
+              margin="2rem"
+              variant="contained"
+              color="primary"
+              className="button_style"
+            >
+              {' '}
+              New Note{' '}
+            </Button>
+
+            <Button variant="contained" color="primary">
+              {' '}
+              View Notes{' '}
+            </Button>
+          </MuiThemeProvider>
         </Column>
-        <Button> Login / Logout </Button>
+        <MuiThemeProvider theme={theme}>
+          <Button variant="contained" color="primary">
+            {' '}
+            Login / Logout{' '}
+          </Button>
+        </MuiThemeProvider>
       </Column>
     );
   }
