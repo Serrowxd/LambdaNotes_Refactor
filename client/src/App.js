@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Container,
-  Column,
-  Row,
-  Cards,
-  CardContainer,
-  Navigation,
-  Noteview,
-  LandingRow,
-  LandingRender,
-} from './reducer';
+import { Container, Landing } from './reducer';
 
 import Button from '@material-ui/core/Button';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
@@ -45,35 +35,7 @@ class App extends Component {
     });
     return (
       <Container>
-        <Column width="100%" height="100%" justify="space-evenly">
-          <LandingRow>
-            <h1> Lots of Notes </h1>
-            <LandingRender className={this.state.active ? 'display' : 'none'}>
-              <h1> Henlo (OvO") </h1>
-            </LandingRender>
-          </LandingRow>
-          <LandingRow>
-            <MuiThemeProvider theme={theme}>
-              <Button
-                variant="extendedFab"
-                color="primary"
-                size="large"
-                className="button_style"
-                onClick={this.toggleClass}
-              >
-                Create an Account
-              </Button>
-              <Button
-                variant="extendedFab"
-                color="primary"
-                size="large"
-                className="button_style"
-              >
-                Log-In
-              </Button>
-            </MuiThemeProvider>
-          </LandingRow>
-        </Column>
+        <Landing />
 
         {/* <Row>
           <Navigation />

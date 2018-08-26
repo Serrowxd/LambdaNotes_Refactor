@@ -2,6 +2,7 @@
 import Navigation from './components/navbar';
 import Cards from './components/cards';
 import Noteview from './containers/Noteview';
+import Landing from './containers/Landing';
 
 // Styles
 import {
@@ -13,11 +14,13 @@ import {
   Button,
   LandingRow,
   LandingRender,
+  SignInput,
 } from './styles/styles';
 
 export {
   // Containers
   Noteview,
+  Landing,
   // Components
   Navigation,
   Cards,
@@ -30,4 +33,5 @@ export {
   Button,
   LandingRow,
   LandingRender,
+  SignInput,
 };

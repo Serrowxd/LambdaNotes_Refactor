@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -99,4 +99,21 @@ export const LandingRender = styled.div`
   border-radius: 50px;
   text-align: center;
   position: absolute;
+
+  p {
+    font-size: 2rem;
+  }
+`;
+
+export const SignInput = styled.input`
+  width: ${props => props.width};
+  height: 2.5rem;
+  align-self: center;
+  margin-top: 2rem;
+
+  ${props =>
+    props.inputbutton &&
+    css`
+      width: 10rem;
+    `};
 `;
