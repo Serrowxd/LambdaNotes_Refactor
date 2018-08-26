@@ -115,5 +115,6 @@ export const SignInput = styled.input`
     props.inputbutton &&
     css`
       width: 10rem;
+      border-radius: 10px;
     `};
 `;

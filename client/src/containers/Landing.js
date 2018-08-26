@@ -47,16 +47,41 @@ class Landing extends Component {
           <h1> Lots of Notes </h1>
           <LandingRender className={this.state.active1 ? 'display' : 'none'}>
             <p> Let's get you signed up (OvO") </p>
-            <SignInput width="60%" type="text" name="username" required />
-            <SignInput width="60%" type="password" name="password" required />
-            <SignInput inputbutton type="submit" />
+            <SignInput
+              width="60%"
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <SignInput
+              width="60%"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <SignInput inputbutton type="submit" value="Sign-up" />
+            {/* This Sign-up is broken? */}
           </LandingRender>
 
           <LandingRender className={this.state.active2 ? 'display' : 'none'}>
             <p> Welcome Back (OvO") </p>
-            <SignInput width="60%" type="text" name="username" required />
-            <SignInput width="60%" type="password" name="password" required />
-            <SignInput inputbutton type="submit" />
+            <SignInput
+              width="60%"
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <SignInput
+              width="60%"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <SignInput inputbutton type="submit" value="Log-in" />
           </LandingRender>
         </LandingRow>
         <LandingRow>
