@@ -37,9 +37,10 @@ export const Column = styled.div`
 
 export const CardContainer = styled.div`
   display: flex;
+  justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
+  height: auto;
   width: 100%;
   position: relative;
   overflow: auto;

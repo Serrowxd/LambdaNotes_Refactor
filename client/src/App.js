@@ -35,12 +35,9 @@ class App extends Component {
     });
     return (
       <Container>
-        {/* <Landing /> */}
+        <Landing />
 
-        <Row>
-          <Navigation />
-          <Noteview />
-        </Row>
+        {/* <Noteview /> */}
       </Container>
     );
   }
