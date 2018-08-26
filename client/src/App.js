@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Landing } from './reducer';
+import { Container, Landing, Row, Navigation, Noteview } from './reducer';
 
 import Button from '@material-ui/core/Button';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
@@ -35,12 +35,12 @@ class App extends Component {
     });
     return (
       <Container>
-        <Landing />
+        {/* <Landing /> */}
 
-        {/* <Row>
+        <Row>
           <Navigation />
           <Noteview />
-        </Row> */}
+        </Row>
       </Container>
     );
   }

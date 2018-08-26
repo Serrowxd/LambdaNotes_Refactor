@@ -44,7 +44,7 @@ class Landing extends Component {
     return (
       <Column width="100%" height="100%" justify="space-evenly">
         <LandingRow>
-          <h1> Lots of Notes </h1>
+          <h1> Lambda Notes </h1>
           <LandingRender className={this.state.active1 ? 'display' : 'none'}>
             <p> Let's get you signed up (OvO") </p>
             <SignInput

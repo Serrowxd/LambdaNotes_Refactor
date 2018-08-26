@@ -21,9 +21,11 @@ body.preload * {
 }
 .none {
   animation: hide 0.5s forwards;
+  position: absolute;
 }
 .display {
   animation: render 0.5s forwards;
+  position: absolute;
 }
 @keyframes render {
   0% {
@@ -31,6 +33,7 @@ body.preload * {
   }
   100% {
     opacity: 1;
+    z-index: 1;
   }
 }
 @keyframes hide {
@@ -40,5 +43,6 @@ body.preload * {
   100% {
     opacity: 0;
     display: none;
+    z-index: -1;
   }
 }
