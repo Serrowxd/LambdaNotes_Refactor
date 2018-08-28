@@ -26,7 +26,7 @@ export const Row = styled.div`
     props.styledcolor &&
     css`
       color: white;
-      background-color: #637bfe;
+      background-color: #3f51b5;
     `};
 
   ${props =>
@@ -58,7 +58,7 @@ export const Column = styled.div`
     props.styledcolor &&
     css`
       color: snow;
-      background-color: #6573c3;
+      background-color: #303030;
     `};
 
   ${props =>
@@ -82,7 +82,7 @@ export const CardContainer = styled.div`
   ${props =>
     props.styledcolor &&
     css`
-      background: #424242;
+      background: #303030;
     `};
 `;
 

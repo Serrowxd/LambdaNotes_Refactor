@@ -34,7 +34,7 @@ class Navigation extends Component {
 
     return (
       <Column
-        styledcolor
+        styledlanding
         justify={this.state.active ? 'flex-start' : 'space-around'}
         pad="2rem"
         textalign="center"

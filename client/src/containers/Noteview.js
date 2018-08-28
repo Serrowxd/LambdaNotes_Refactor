@@ -7,7 +7,7 @@ const Noteview = () => {
       <Navigation />
       <Column width="100%">
         <Row styledcolor padall="1rem">
-          <h1> Cards </h1>
+          <h1> Notes </h1>
         </Row>
         <CardContainer styledcolor>
           <Row innercard>
