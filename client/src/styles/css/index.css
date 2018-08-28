@@ -2,6 +2,12 @@ body.preload * {
   animation-duration: 0s !important;
   -webkit-animation-duration: 0s !important;
 }
+.href_override {
+  color: white !important;
+}
+.button_style:hover {
+  color: white !important;
+}
 .card {
   height: 350px;
   width: 350px;

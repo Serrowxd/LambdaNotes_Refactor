@@ -69,7 +69,8 @@ class Landing extends Component {
                 variant="extendedFab"
                 color="primary"
                 size="large"
-                className="sign_button"
+                className="sign_button href_override"
+                href="/notes"
               >
                 Sign-Up
               </Button>
@@ -100,7 +101,8 @@ class Landing extends Component {
                 variant="extendedFab"
                 color="primary"
                 size="large"
-                className="sign_button"
+                className="sign_button href_override"
+                href="/notes"
               >
                 Log-in
               </Button>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Landing, Row, Navigation, Noteview } from './reducer';
+import { Route } from 'react-router-dom';
+import { Container, Landing, Noteview, StateNotes } from './reducer';
 
 import Button from '@material-ui/core/Button';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
@@ -20,6 +21,8 @@ class App extends Component {
     this.setState({ active: !currentState });
   }
 
+  // This toggle is no longer used, has been moved.
+
   render() {
     const theme = createMuiTheme({
       palette: {
@@ -33,11 +36,11 @@ class App extends Component {
         },
       },
     });
+    // Theme is no longer used, has been moved.
     return (
       <Container>
-        {/* <Landing /> */}
-
-        <Noteview />
+        <Route exact path="/" component={Landing} />
+        <Route path="/notes" component={StateNotes} />
       </Container>
     );
   }

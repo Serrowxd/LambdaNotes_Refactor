@@ -55,6 +55,7 @@ class Navigation extends Component {
               variant="contained"
               color="primary"
               className="button_style"
+              href="/notes/daily"
             >
               Daily
             </Button>
@@ -63,6 +64,7 @@ class Navigation extends Component {
               variant="contained"
               color="primary"
               className="button_style"
+              href="/notes/view"
             >
               Notes
             </Button>
@@ -87,6 +89,7 @@ class Navigation extends Component {
               variant="contained"
               color="primary"
               className="button_style"
+              href="/"
             >
               Account
             </Button>
@@ -97,7 +100,8 @@ class Navigation extends Component {
             variant="contained"
             color="primary"
             className="button_style"
-            className="child_container"
+            className="child_container href_override"
+            href="/"
           >
             Login / Logout
           </Button>

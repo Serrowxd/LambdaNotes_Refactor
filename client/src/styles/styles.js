@@ -83,6 +83,15 @@ export const CardContainer = styled.div`
     props.styledcolor &&
     css`
       background: #303030;
+      height: 100%;
+    `};
+
+  ${props =>
+    props.styledtemp &&
+    css`
+      background: #303030;
+      color: snow;
+      height: 100%;
     `};
 `;
 
