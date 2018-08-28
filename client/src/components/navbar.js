@@ -35,15 +35,15 @@ class Navigation extends Component {
     return (
       <Column
         background="lightblue"
-        justify={this.state.active ? 'space-around' : 'flex-start'}
+        justify={this.state.active ? 'flex-start' : 'space-around'}
         pad="2rem"
         textalign="center"
         width="20rem"
-        className={this.state.active ? '' : 'hidenav'}
+        className={this.state.active ? 'hidenav' : 'shownav'}
       >
         <h1 className="headertext" onClick={this.toggleClass}>
           {' '}
-          {this.state.active ? 'Noted' : '|||'}{' '}
+          {this.state.active ? 'X' : 'Noted'}{' '}
         </h1>
         <Column
           justify="space-evenly"

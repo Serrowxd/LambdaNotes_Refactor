@@ -54,13 +54,60 @@ body.preload * {
   }
 }
 .hidenav {
-  width: 5rem;
+  animation: widthhide 1s forwards;
+  animation-delay: 1s;
 }
 .hidenav .headertext {
   font-size: 3rem;
   margin-top: 1rem;
-  transform: rotate(90deg);
+  align-self: center;
 }
 .hidenav .child_container {
-  display: none;
+  animation: hidenav 2s forwards;
+}
+.shownav {
+  animation: widthshow 1s forwards;
+}
+.shownav .child_container,
+.shownav .headertext {
+  opacity: 0;
+  animation: rendernav 1s forwards;
+  animation-delay: 1s;
+}
+@keyframes rendernav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+@keyframes hidenav {
+  0% {
+    opacity: 1;
+    margin-top: 25rem;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+    margin-top: 100rem;
+  }
+}
+@keyframes widthhide {
+  0% {
+    width: 20rem;
+  }
+  100% {
+    width: 5rem;
+  }
+}
+@keyframes widthshow {
+  0% {
+    width: 5rem;
+  }
+  100% {
+    width: 20rem;
+  }
 }
