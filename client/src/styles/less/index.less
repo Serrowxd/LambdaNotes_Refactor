@@ -19,13 +19,21 @@ body.preload * {
 
 .headertext {
   font-size: 5rem;
+  cursor: pointer;
 }
 
 .button_style {
-  width: 20rem !important;
+  width: 15rem !important;
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
-  height: 4rem !important;
+  height: 3rem !important;
+}
+
+.sign_button {
+  width: 15rem !important;
+  margin-top: 3rem !important;
+  height: 2rem !important;
+  align-self: center;
 }
 
 // Landing Display
@@ -58,5 +66,21 @@ body.preload * {
     opacity: 0;
     display: none;
     z-index: -1;
+  }
+}
+
+// Navigation
+
+.hidenav {
+  width: 5rem;
+
+  .headertext {
+    font-size: 3rem;
+    margin-top: 1rem;
+    transform: rotate(90deg);
+  }
+
+  .child_container {
+    display: none;
   }
 }

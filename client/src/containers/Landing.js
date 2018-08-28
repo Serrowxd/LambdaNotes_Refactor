@@ -44,7 +44,7 @@ class Landing extends Component {
     return (
       <Column width="100%" height="100%" justify="space-evenly">
         <LandingRow>
-          <h1> Lambda Notes </h1>
+          <h1> Noted </h1>
           <LandingRender className={this.state.active1 ? 'display' : 'none'}>
             <p> Let's get you signed up (OvO") </p>
             <SignInput
@@ -61,8 +61,16 @@ class Landing extends Component {
               placeholder="Password"
               required
             />
-            <SignInput inputbutton type="submit" value="Sign-up" />
-            {/* This Sign-up is broken? */}
+            <MuiThemeProvider theme={theme}>
+              <Button
+                variant="extendedFab"
+                color="primary"
+                size="large"
+                className="sign_button"
+              >
+                Sign-Up
+              </Button>
+            </MuiThemeProvider>
           </LandingRender>
 
           <LandingRender className={this.state.active2 ? 'display' : 'none'}>
@@ -81,7 +89,16 @@ class Landing extends Component {
               placeholder="Password"
               required
             />
-            <SignInput inputbutton type="submit" value="Log-in" />
+            <MuiThemeProvider theme={theme}>
+              <Button
+                variant="extendedFab"
+                color="primary"
+                size="large"
+                className="sign_button"
+              >
+                Log-in
+              </Button>
+            </MuiThemeProvider>
           </LandingRender>
         </LandingRow>
         <LandingRow>

@@ -3,7 +3,7 @@ import { Column, CardContainer, Row, Cards, Navigation } from '../reducer';
 
 const Noteview = () => {
   return (
-    <Row>
+    <Row position="relative" overflow="hidden">
       <Navigation />
       <Column width="100%">
         <Row background="lightgray" padall="1rem">

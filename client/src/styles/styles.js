@@ -19,6 +19,8 @@ export const Row = styled.div`
   padding-top: ${props => props.pad};
   padding-bottom: ${props => props.pad};
   padding: ${props => props.padall};
+  position: ${props => props.position};
+  overflow: ${props => props.overflow};
 `;
 
 export const Column = styled.div`

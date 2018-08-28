@@ -12,12 +12,19 @@ body.preload * {
 }
 .headertext {
   font-size: 5rem;
+  cursor: pointer;
 }
 .button_style {
-  width: 20rem !important;
+  width: 15rem !important;
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
-  height: 4rem !important;
+  height: 3rem !important;
+}
+.sign_button {
+  width: 15rem !important;
+  margin-top: 3rem !important;
+  height: 2rem !important;
+  align-self: center;
 }
 .none {
   animation: hide 0.5s forwards;
@@ -45,4 +52,15 @@ body.preload * {
     display: none;
     z-index: -1;
   }
+}
+.hidenav {
+  width: 5rem;
+}
+.hidenav .headertext {
+  font-size: 3rem;
+  margin-top: 1rem;
+  transform: rotate(90deg);
+}
+.hidenav .child_container {
+  display: none;
 }

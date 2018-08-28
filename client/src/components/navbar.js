@@ -5,6 +5,19 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import orange from '@material-ui/core/colors/orange';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggleClass = this.toggleClass.bind(this);
+    this.state = {
+      active: false,
+    };
+  }
+
+  toggleClass() {
+    let currentState = this.state.active;
+    this.setState({ active: !currentState });
+  }
   render() {
     const theme = createMuiTheme({
       palette: {
@@ -22,12 +35,21 @@ class Navigation extends Component {
     return (
       <Column
         background="lightblue"
-        justify="space-around"
+        justify={this.state.active ? 'space-around' : 'flex-start'}
         pad="2rem"
         textalign="center"
+        width="20rem"
+        className={this.state.active ? '' : 'hidenav'}
       >
-        <h1 class="headertext"> Notes </h1>
-        <Column justify="space-evenly" height="10rem">
+        <h1 className="headertext" onClick={this.toggleClass}>
+          {' '}
+          {this.state.active ? 'Noted' : '|||'}{' '}
+        </h1>
+        <Column
+          justify="space-evenly"
+          height="10rem"
+          className="child_container"
+        >
           <MuiThemeProvider theme={theme}>
             <Button
               margin="2rem"
@@ -35,8 +57,7 @@ class Navigation extends Component {
               color="primary"
               className="button_style"
             >
-              {' '}
-              New Note{' '}
+              Daily
             </Button>
 
             <Button
@@ -44,15 +65,42 @@ class Navigation extends Component {
               color="primary"
               className="button_style"
             >
-              {' '}
-              View Notes{' '}
+              Notes
+            </Button>
+
+            <Button
+              variant="contained"
+              color="primary"
+              className="button_style"
+            >
+              Calendar
+            </Button>
+
+            <Button
+              variant="contained"
+              color="primary"
+              className="button_style"
+            >
+              Settings
+            </Button>
+
+            <Button
+              variant="contained"
+              color="primary"
+              className="button_style"
+            >
+              Account
             </Button>
           </MuiThemeProvider>
         </Column>
         <MuiThemeProvider theme={theme}>
-          <Button variant="contained" color="primary" className="button_style">
-            {' '}
-            Login / Logout{' '}
+          <Button
+            variant="contained"
+            color="primary"
+            className="button_style"
+            className="child_container"
+          >
+            Login / Logout
           </Button>
         </MuiThemeProvider>
       </Column>
