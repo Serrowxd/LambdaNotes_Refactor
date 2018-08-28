@@ -46,3 +46,7 @@ A new and improved Lambda Notes done post-graduation from Lambda.
     - Light/Dark theme (stretch)
     - Organize (stretch)
     - _They don't have to work yet, maybe just icons for now_
+
+- **Routes**
+  - Navigating to and from the landing works, but navigating within is a little difficult due to the animations. Maybe using the state-navigation?
+  - **UTILIZED - StateNavigation (container) is done without routes**
