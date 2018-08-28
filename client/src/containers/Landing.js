@@ -42,10 +42,13 @@ class Landing extends Component {
       },
     });
     return (
-      <Column width="100%" height="100%" justify="space-evenly">
+      <Column styledlanding width="100%" height="100%" justify="space-evenly">
         <LandingRow>
           <h1> Noted </h1>
-          <LandingRender className={this.state.active1 ? 'display' : 'none'}>
+          <LandingRender
+            styledinput
+            className={this.state.active1 ? 'display' : 'none'}
+          >
             <p> Let's get you signed up (OvO") </p>
             <SignInput
               width="60%"
@@ -73,7 +76,10 @@ class Landing extends Component {
             </MuiThemeProvider>
           </LandingRender>
 
-          <LandingRender className={this.state.active2 ? 'display' : 'none'}>
+          <LandingRender
+            styledinput
+            className={this.state.active2 ? 'display' : 'none'}
+          >
             <p> Welcome Back (OvO") </p>
             <SignInput
               width="60%"

@@ -36,7 +36,7 @@ export const Row = styled.div`
       margin-left: 5%;
       margin-top: 2%;
       flex-wrap: wrap;
-      width: 90%;
+      width: 100%;
       justify-content: flex-start;
     `};
 `;
@@ -59,6 +59,13 @@ export const Column = styled.div`
     css`
       color: snow;
       background-color: #6573c3;
+    `};
+
+  ${props =>
+    props.styledlanding &&
+    css`
+      color: snow;
+      background-color: #424242;
     `};
 `;
 
@@ -137,6 +144,13 @@ export const LandingRender = styled.div`
   p {
     font-size: 2rem;
   }
+
+  ${props =>
+    props.styledinput &&
+    css`
+      color: snow;
+      background-color: #303030;
+    `};
 `;
 
 export const SignInput = styled.input`

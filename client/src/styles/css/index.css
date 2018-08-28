@@ -4,7 +4,7 @@ body.preload * {
 }
 .card {
   height: 350px;
-  width: 450px;
+  width: 350px;
   margin: 0.5rem;
 }
 .card .card-body {
