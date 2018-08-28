@@ -1,4 +1,4 @@
-# LambdaNotes_Refactor
+# Noted
 
 A new and improved Lambda Notes done post-graduation from Lambda.
 
