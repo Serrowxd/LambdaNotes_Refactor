@@ -43,7 +43,7 @@ class Navigation extends Component {
       >
         <h1 className="headertext" onClick={this.toggleClass}>
           {' '}
-          {this.state.active ? 'X' : 'Noted'}{' '}
+          {this.state.active ? 'Noted' : 'Noted'}{' '}
         </h1>
         <Column
           justify="space-evenly"

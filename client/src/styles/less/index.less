@@ -9,7 +9,7 @@ body.preload * {
 
 .card {
   height: 350px;
-  width: 350px;
+  width: 450px;
   margin: 0.5rem;
 
   .card-body {
@@ -77,7 +77,7 @@ body.preload * {
 
   .headertext {
     font-size: 3rem;
-    margin-top: 1rem;
+    animation: namechange 1s forwards;
     align-self: center;
   }
 
@@ -111,11 +111,13 @@ body.preload * {
     opacity: 1;
     margin-top: 25rem;
   }
+  90% {
+    margin-top: 100rem;
+  }
   100% {
     opacity: 0;
     display: none;
     z-index: -1;
-    margin-top: 100rem;
   }
 }
 
@@ -134,5 +136,16 @@ body.preload * {
   }
   100% {
     width: 20rem;
+  }
+}
+
+@keyframes namechange {
+  0% {
+    margin-top: 10rem;
+    font-size: 5rem;
+  }
+  100% {
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
 }
