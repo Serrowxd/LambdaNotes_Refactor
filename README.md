@@ -14,13 +14,24 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 
 **Landing Popover Background:** [same as container]
 
+# Major To-Do
+
+- Create components for the pages that are missing.
+- Look at a calendar that can be populated through React, maybe a pre-built?
+- Consider moving the database to Django and weigh options.
+- Triple check color codes and revamp them to be more accurate.
+- Create "Note" modification and creation screens, add the ability to create dates for them (future planning?).
+- Possibly a new way of displaying the notes themselves? Having them all ordered up like that feels weird.
+
 # ToDo
 
 - **Features:**
 
   - A calendar to keep track of note dates.
-  - Maybe a daily to-do popover
+  - Maybe a daily to-do popover.
   - _think dayplanner but mobile/desktop_
+  - Add Dates to the notes, then an option to render them in the calendar.
+  - DJango Back-End instead of Node? A little easier to manage, and I want to work in Python again :D.
 
 - **Landing:**
 
@@ -29,7 +40,6 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - **Noteview:**
 
   - It wouldn't hurt to have maybe some buttons added to the small-version of the navigation in the noteview section. Possibly icons that reference different thing.
-  - Second idea, just collapse the blue bar and fill the screen with the notes.
 
 # Broken Stuff
 
