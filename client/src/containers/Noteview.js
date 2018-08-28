@@ -6,24 +6,26 @@ const Noteview = () => {
     <Row position="relative" overflow="hidden">
       <Navigation />
       <Column width="100%">
-        <Row background="lightgray" padall="1rem">
+        <Row styledcolor padall="1rem">
           <h1> Cards </h1>
         </Row>
-        <CardContainer>
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+        <CardContainer styledcolor>
+          <Row innercard>
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+          </Row>
         </CardContainer>
       </Column>
     </Row>

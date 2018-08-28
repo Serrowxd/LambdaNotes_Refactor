@@ -34,7 +34,7 @@ class Navigation extends Component {
 
     return (
       <Column
-        background="lightblue"
+        styledcolor
         justify={this.state.active ? 'flex-start' : 'space-around'}
         pad="2rem"
         textalign="center"
@@ -42,8 +42,7 @@ class Navigation extends Component {
         className={this.state.active ? 'hidenav' : 'shownav'}
       >
         <h1 className="headertext" onClick={this.toggleClass}>
-          {' '}
-          {this.state.active ? 'Noted' : 'Noted'}{' '}
+          Noted
         </h1>
         <Column
           justify="space-evenly"

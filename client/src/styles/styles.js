@@ -21,6 +21,24 @@ export const Row = styled.div`
   padding: ${props => props.padall};
   position: ${props => props.position};
   overflow: ${props => props.overflow};
+
+  ${props =>
+    props.styledcolor &&
+    css`
+      color: white;
+      background-color: #637bfe;
+    `};
+
+  ${props =>
+    props.innercard &&
+    css`
+      display: flex;
+      margin-left: 5%;
+      margin-top: 2%;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: flex-start;
+    `};
 `;
 
 export const Column = styled.div`
@@ -35,6 +53,13 @@ export const Column = styled.div`
   width: ${props => props.width};
   flex-wrap: ${props => props.wrap};
   height: ${props => props.height};
+
+  ${props =>
+    props.styledcolor &&
+    css`
+      color: snow;
+      background-color: #6573c3;
+    `};
 `;
 
 export const CardContainer = styled.div`
@@ -46,6 +71,12 @@ export const CardContainer = styled.div`
   width: 100%;
   position: relative;
   overflow: auto;
+
+  ${props =>
+    props.styledcolor &&
+    css`
+      background: #424242;
+    `};
 `;
 
 export const Button = styled.button`
