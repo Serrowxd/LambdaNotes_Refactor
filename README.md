@@ -2,6 +2,14 @@
 
 A new and improved Lambda Notes done post-graduation from Lambda.
 
+# Color Codes
+
+**Upper Cardview Row Blue:** #3f51b5
+**Landing Background:** #424242
+**Navigation Background:** [same as Landing]
+**Container Background:** #303030
+**Landing Popover Background:** [same as container]
+
 # ToDo
 
 - **Features:**
