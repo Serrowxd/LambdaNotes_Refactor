@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Container, Landing, Noteview, StateNotes } from './reducer';
-
-import Button from '@material-ui/core/Button';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
-import orange from '@material-ui/core/colors/orange';
+import { Container, Landing, StateNotes } from './reducer';
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +9,6 @@ class App extends Component {
     this.state = {
       active: false,
     };
-    // this.toggle = this.toggle.bind(this);
   }
 
   toggleClass() {
@@ -22,21 +17,9 @@ class App extends Component {
   }
 
   // This toggle is no longer used, has been moved.
+  // Leaving State because it will be used for Redux.
 
   render() {
-    const theme = createMuiTheme({
-      palette: {
-        primary: orange,
-      },
-      overrides: {
-        MuiButton: {
-          raisedPrimary: {
-            color: 'white',
-          },
-        },
-      },
-    });
-    // Theme is no longer used, has been moved.
     return (
       <Container>
         <Route exact path="/" component={Landing} />
