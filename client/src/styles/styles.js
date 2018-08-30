@@ -67,6 +67,11 @@ export const Column = styled.div`
       color: snow;
       background-color: #424242;
     `};
+
+  button {
+    outline: none !important;
+    /* Removes the outline from material buttons */
+  }
 `;
 
 export const CardContainer = styled.div`

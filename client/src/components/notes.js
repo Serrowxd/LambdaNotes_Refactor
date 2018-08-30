@@ -31,4 +31,4 @@ const Notes = () => {
 
 export default Notes;
 
-// Temporary Notes - Will need to pass notes as props
+// Temporary Notes - Maybe passing props to the notes via a map from State?
