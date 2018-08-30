@@ -21,7 +21,7 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - Consider moving the database to Django and weigh options.
 - Triple check color codes and revamp them to be more accurate.
 - Create "Note" modification and creation screens, add the ability to create dates for them (future planning?).
-- Possibly a new way of displaying the notes themselves? Having them all ordered up like that feels weird.
+- Find a way to render content inside `containedview`, right now it's just labeled as `{this.props.content}` and that's not going to work when I'm rendering larger bits like entire components.
 
 # ToDo
 
