@@ -73,6 +73,7 @@ class Navigation extends Component {
               variant="contained"
               color="primary"
               className="button_style"
+              href="/notes/calendar"
             >
               Calendar
             </Button>
@@ -89,7 +90,6 @@ class Navigation extends Component {
               variant="contained"
               color="primary"
               className="button_style"
-              href="/"
             >
               Account
             </Button>

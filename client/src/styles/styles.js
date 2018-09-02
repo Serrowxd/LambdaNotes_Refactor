@@ -89,6 +89,7 @@ export const CardContainer = styled.div`
     css`
       background: #303030;
       height: 100%;
+      justify-content: center;
     `};
 
   ${props =>

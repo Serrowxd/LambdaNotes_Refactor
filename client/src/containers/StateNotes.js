@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Column, Row, Daily, Notes } from '../reducer';
+import { Column, Row, Daily, Notes, CalendarView } from '../reducer';
 import Button from '@material-ui/core/Button';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import orange from '@material-ui/core/colors/orange';
@@ -11,7 +11,7 @@ class StateNotes extends Component {
     this.toggleClass = this.toggleClass.bind(this);
     this.state = {
       active: false,
-      comp: <Daily />,
+      comp: <CalendarView />,
     };
   }
 
@@ -80,6 +80,7 @@ class StateNotes extends Component {
                 variant="contained"
                 color="primary"
                 className="button_style"
+                onClick={this.handleClick.bind(this, <CalendarView />)}
               >
                 Calendar
               </Button>
@@ -96,7 +97,6 @@ class StateNotes extends Component {
                 variant="contained"
                 color="primary"
                 className="button_style"
-                href="/"
               >
                 Account
               </Button>

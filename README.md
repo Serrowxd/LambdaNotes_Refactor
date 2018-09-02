@@ -17,11 +17,11 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 # Major To-Do
 
 - Create components for the pages that are missing.
-- Look at a calendar that can be populated through React, maybe a pre-built?
 - Consider moving the database to Django and weigh options.
 - Triple check color codes and revamp them to be more accurate.
 - Create "Note" modification and creation screens, add the ability to create dates for them (future planning?).
 - Find a way to render content inside `containedview`, right now it's just labeled as `{this.props.content}` and that's not going to work when I'm rendering larger bits like entire components.
+- **RESEARCH HIGHER ORDER COMPONENTS AND RENDER PROPS**
 
 # ToDo
 
@@ -60,3 +60,7 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - **Routes**
   - Navigating to and from the landing works, but navigating within is a little difficult due to the animations. Maybe using the state-navigation?
   - **UTILIZED - StateNavigation (container) is done without routes**
+
+# Dependencies
+
+[React-Calendar](https://www.npmjs.com/package/react-calendar)
