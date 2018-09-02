@@ -11,7 +11,7 @@ class StateNotes extends Component {
     this.toggleClass = this.toggleClass.bind(this);
     this.state = {
       active: false,
-      comp: <CalendarView />,
+      comp: <Daily />,
     };
   }
 

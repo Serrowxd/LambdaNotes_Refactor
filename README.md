@@ -41,11 +41,17 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 
   - It wouldn't hurt to have maybe some buttons added to the small-version of the navigation in the noteview section. Possibly icons that reference different thing.
 
+- **Calendar**
+
+  - Add a container that populates notes below the calendar component.
+  - OnClick for dates should populate with a list of notes on that day below the calendar container. Those notes should then connect to the note itself.
+  - Maybe a color for the text that dictates whether or not there is a note registered to that day.
+
 # Broken Stuff
 
 - **Landing:**
 
-  - Not super reactive at lower layouts, will need to add breakpoints for size.
+  - Not super reactive at lower layouts, will need to add breakpoints for size at phone.
   - Buttons and fields to sign-up feel off, and the layout feels rather dull. It's minimal, but almost too minimal.
 
 - **Noteview:**
