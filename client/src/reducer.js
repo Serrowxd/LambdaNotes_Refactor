@@ -4,6 +4,8 @@ import Cards from './components/cards';
 import Notes from './components/notes';
 import Daily from './components/daily';
 import CalendarView from './components/calendar';
+import Settings from './components/settings';
+import Account from './components/account';
 
 // Containers
 import Noteview from './containers/Noteview';
@@ -37,6 +39,8 @@ export {
   Notes,
   Daily,
   CalendarView,
+  Settings,
+  Account,
   // Styles
   Container,
   Column,
