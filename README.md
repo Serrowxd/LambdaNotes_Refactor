@@ -47,6 +47,10 @@ A new and improved Lambda Notes done post-graduation from Lambda.
   - OnClick for dates should populate with a list of notes on that day below the calendar container. Those notes should then connect to the note itself.
   - Maybe a color for the text that dictates whether or not there is a note registered to that day.
 
+- **Axios**
+
+  - Set an `actions` folder, set-up CRUD actions that interact with the back-end.
+
 # Broken Stuff
 
 - **Landing:**
