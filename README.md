@@ -50,6 +50,7 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - **Axios**
 
   - Set an `actions` folder, set-up CRUD actions that interact with the back-end.
+  - Map `GET` requests to cards, creating a card should post title/content, then create a date to post to the database.
 
 # Broken Stuff
 
