@@ -16,7 +16,6 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 
 # Major To-Do
 
-- Create components for the pages that are missing.
 - Consider moving the database to Django and weigh options.
 - Triple check color codes and revamp them to be more accurate.
 - Create "Note" modification and creation screens, add the ability to create dates for them (future planning?).
