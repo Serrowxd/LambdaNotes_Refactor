@@ -10,6 +10,7 @@ class Notes extends Component {
       cardsInfo: cardsdata,
     };
   }
+
   render() {
     return (
       <Column width="100%">
@@ -28,10 +29,10 @@ class Notes extends Component {
   }
 }
 
+// Use Redux / Axios
 export default Notes;
 
 // Temporary Notes
-// Use Redux / Axios
 // Write back-end first before trying to do calls here
 // OnClick should render a card in place of the <Cards />, then edit/delete will do other things
 // Will need to do it with Redux to pass the state or something that will allow you to render a specific note on click.
