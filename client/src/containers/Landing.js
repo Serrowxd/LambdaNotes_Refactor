@@ -7,13 +7,13 @@ import orange from '@material-ui/core/colors/orange';
 class Landing extends Component {
   constructor(props) {
     super(props);
-    this.toggleClass1 = this.toggleClass1.bind(this);
-    this.toggleClass2 = this.toggleClass2.bind(this);
+
     this.state = {
       active1: false,
       active2: false,
     };
-    // this.toggle = this.toggle.bind(this);
+    this.toggleClass1 = this.toggleClass1.bind(this);
+    this.toggleClass2 = this.toggleClass2.bind(this);
   }
 
   toggleClass1() {

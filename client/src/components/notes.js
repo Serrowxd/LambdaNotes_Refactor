@@ -8,7 +8,15 @@ class Notes extends Component {
 
     this.state = {
       cardsInfo: cardsdata,
+      lorge: false,
     };
+    this.toggleClass = this.toggleClass.bind(this);
+  }
+
+  toggleClass() {
+    let currenState = this.state.lorge;
+
+    this.setState({ lorge: !currenState });
   }
 
   render() {
@@ -20,7 +28,14 @@ class Notes extends Component {
         <CardContainer styledcolor>
           <Row innercard>
             {this.state.cardsInfo.map(([title, text], i) => {
-              return <Cards title={title} text={text} key={i} />;
+              return (
+                <Cards
+                  title={title}
+                  text={text}
+                  key={i}
+                  onClick={this.toggleClass}
+                />
+              );
             })}
           </Row>
         </CardContainer>
@@ -31,6 +46,9 @@ class Notes extends Component {
 
 // Use Redux / Axios
 export default Notes;
+
+// Idea --
+// onClick will set state of all cards to false, unless false === false
 
 // Temporary Notes
 // Write back-end first before trying to do calls here
