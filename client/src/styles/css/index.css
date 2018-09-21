@@ -39,11 +39,10 @@ body.preload * {
   align-self: center;
 }
 .big {
-  position: absolute;
   z-index: 1;
   opacity: 1;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 20%;
 }
 .none {
   animation: hide 0.5s forwards;

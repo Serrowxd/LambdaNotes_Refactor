@@ -15,8 +15,15 @@ class Notes extends Component {
 
   toggleClass() {
     let currenState = this.state.lorge;
-
     this.setState({ lorge: !currenState });
+  }
+
+  checkState() {
+    if (this.state.lorge === false) {
+      this.setState({ lorge: true });
+    } else {
+      this.setState({ lorge: false });
+    }
   }
 
   render() {
@@ -33,7 +40,7 @@ class Notes extends Component {
                   title={title}
                   text={text}
                   key={i}
-                  onClick={this.toggleClass}
+                  onClick={this.checkState}
                 />
               );
             })}
