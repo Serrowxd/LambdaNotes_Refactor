@@ -8,8 +8,16 @@ const ContainedView = props => {
         <h1> Daily </h1>
       </Row>
       <CardContainer styledcolor styledtemp>
-        <Row innercard>
-          <h3> Daily! </h3>
+        <Row innercard alignme>
+          <Column>
+            <h3> You have no tasks today, create some? </h3>
+            <button>No Worky</button>
+            <p>
+              <code>
+                This button will create a new note, when it's working :|
+              </code>
+            </p>
+          </Column>
         </Row>
       </CardContainer>
     </Column>
@@ -17,3 +25,5 @@ const ContainedView = props => {
 };
 
 export default ContainedView;
+
+// This will map notes based on date, if there are none it will display "You have no tasks today, create some?"

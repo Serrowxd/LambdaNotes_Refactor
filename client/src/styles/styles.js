@@ -39,6 +39,12 @@ export const Row = styled.div`
       width: 95%;
       justify-content: flex-start;
     `};
+
+  ${props =>
+    props.alignme &&
+    css`
+      justify-content: center;
+    `};
 `;
 
 export const Column = styled.div`
