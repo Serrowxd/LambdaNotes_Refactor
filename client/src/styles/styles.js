@@ -44,6 +44,7 @@ export const Row = styled.div`
     props.alignme &&
     css`
       justify-content: center;
+      text-align: center;
     `};
 `;
 
