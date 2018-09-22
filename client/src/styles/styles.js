@@ -36,7 +36,7 @@ export const Row = styled.div`
       margin-left: 5%;
       margin-top: 2%;
       flex-wrap: wrap;
-      width: 100%;
+      width: 95%;
       justify-content: flex-start;
     `};
 `;
