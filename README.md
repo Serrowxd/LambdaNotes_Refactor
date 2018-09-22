@@ -40,6 +40,10 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 
   - It wouldn't hurt to have maybe some buttons added to the small-version of the navigation in the noteview section. Possibly icons that reference different things. These will only display when the navigation bar is collapsed. Maybe look into some custom icons, or just basic white icons to go in place of the navigation buttons.
 
+  - Will need to implement buttons that appear when you click on the notes, allowing users to edit/delete the notes at will with a pop-up modal to confirm deleting the notes.
+
+  - Possibly a note-graveyard? If you accidentally delete a note, have a way to bring it back within a certain time period (or until you clear out your graveyard of notes).
+
 - **Calendar**
 
   - Add a container that populates notes below the calendar component.
@@ -68,8 +72,6 @@ A new and improved Lambda Notes done post-graduation from Lambda.
     - Organize (stretch)
     - _They don't have to work yet, maybe just icons for now_
   - Notes are broken when they have to do anything that involves expanding or collapsing. Currently made them big enough to fill the entire width of their container so users will not be able to accidentally click on other notes.
-  - Will need to implement buttons that appear when you click on the notes, allowing users to edit/delete the notes at will with a pop-up modal to confirm deleting the notes.
-  - Possibly a note-graveyard? If you accidentally delete a note, have a way to bring it back within a certain time period (or until you clear out your graveyard of notes).
 
 - **Routes**
   - Navigating to and from the landing works, but navigating within is a little difficult due to the animations. Maybe using the state-navigation?
