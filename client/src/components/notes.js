@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Column, CardContainer, Row, Cards } from '../reducer';
 import { cardsdata } from '../data/notes';
+import axios from 'axios';
 
 class Notes extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      note: [],
       cardsInfo: cardsdata,
       lorge: false,
     };
@@ -26,6 +28,13 @@ class Notes extends Component {
     }
   }
 
+  componentDidMount() {
+    axios.get(`http://localhost:5500/`).then(res => {
+      const note = res.data;
+      this.setState({ note });
+    });
+  }
+
   render() {
     return (
       <Column width="100%">
@@ -34,15 +43,8 @@ class Notes extends Component {
         </Row>
         <CardContainer styledcolor>
           <Row innercard>
-            {this.state.cardsInfo.map(([title, text], i) => {
-              return (
-                <Cards
-                  title={title}
-                  text={text}
-                  key={i}
-                  onClick={this.checkState}
-                />
-              );
+            {this.state.note.map((note, i) => {
+              return <Cards title={note.title} text={note.body} key={i} />;
             })}
           </Row>
         </CardContainer>
