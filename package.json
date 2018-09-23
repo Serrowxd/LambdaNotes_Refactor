@@ -4,7 +4,8 @@
   "description": "A new and improved Lambda Notes done post-graduation from Lambda.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,9 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "helmet": "^3.13.0",
-    "mongoose": "^5.2.7",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.18.3",
+    "mongoose": "^5.2.17",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
     "passport": "^0.4.0"
   }
 }
