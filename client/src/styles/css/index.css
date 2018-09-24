@@ -46,6 +46,18 @@ body.preload * {
   width: 75%;
   height: 825px;
 }
+button.hidebutton {
+  display: none;
+}
+button.styledbutton {
+  max-width: 20rem;
+  width: 30%;
+  margin-bottom: 1rem;
+}
+.card_buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
 .none {
   animation: hide 0.5s forwards;
   position: absolute;

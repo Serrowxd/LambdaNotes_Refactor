@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Card, CardHeader, CardBody, CardText } from 'reactstrap';
+import { Card, CardHeader, CardBody, CardText, Button } from 'reactstrap';
 
 class Cards extends Component {
   constructor(props) {
@@ -26,6 +26,18 @@ class Cards extends Component {
           <CardBody>
             <CardText>{this.props.text}</CardText>
           </CardBody>
+          <div className="card_buttons">
+            <Button
+              className={this.state.lorge ? 'styledbutton' : 'hidebutton'}
+            >
+              Edit
+            </Button>
+            <Button
+              className={this.state.lorge ? 'styledbutton' : 'hidebutton'}
+            >
+              Delete
+            </Button>
+          </div>
         </Card>
       </Fragment>
     );
