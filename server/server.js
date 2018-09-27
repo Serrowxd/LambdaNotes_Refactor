@@ -57,6 +57,10 @@ server.post('/post', (req, res) => {
     });
 });
 
+server.put('/:id', (req, res) => {});
+
+server.delete('/:id', (req, res) => {});
+
 const port = 5000;
 server.listen(port, () =>
   console.log(`d-(OvO")z up and running on port ${port}`)
