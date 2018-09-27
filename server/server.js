@@ -12,6 +12,7 @@ mongoose.connect('mongodb://localhost:27017/lambda-notes');
 
 // Server
 const server = express();
+const port = 5000;
 
 // Logger
 
@@ -61,7 +62,6 @@ server.put('/:id', (req, res) => {});
 
 server.delete('/:id', (req, res) => {});
 
-const port = 5000;
 server.listen(port, () =>
   console.log(`d-(OvO")z up and running on port ${port}`)
 );
