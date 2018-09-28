@@ -35,6 +35,7 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - **Landing:**
 
   - Possibly adjust sign-up and sign-in buttons to transition down when loading the login-signup screens.
+  - A background image would be nice to have, or maybe a longer landing page with the current login-create moved to a new screen.
 
 - **Noteview:**
 
@@ -43,6 +44,8 @@ A new and improved Lambda Notes done post-graduation from Lambda.
   - Will need to implement buttons that appear when you click on the notes, allowing users to edit/delete the notes at will with a pop-up modal to confirm deleting the notes.
 
   - Possibly a note-graveyard? If you accidentally delete a note, have a way to bring it back within a certain time period (or until you clear out your graveyard of notes).
+
+  - Add a blank note with a + mark to indicate adding a new note when you have none - place this at the end of the card stack, or possibly just add a "create new note" button.
 
 - **Calendar**
 
@@ -54,7 +57,14 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - **Axios**
 
   - Set an `actions` folder, set-up CRUD actions that interact with the back-end.
-  - Map `GET` requests to cards, creating a card should post title/content, then create a date to post to the database.
+  - POST requests should take in information from the "create new note" screen.
+  - DELETE requests should be done via confirmation modal.
+  - PUT requests should be handled in the edit screen.
+
+- **Node**
+
+  - Put/Delete functionality for notes
+  - User Login & Auth
 
 # Broken Stuff
 
