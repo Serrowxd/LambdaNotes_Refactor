@@ -35,6 +35,8 @@ const Note = require('./data/noteSchema.js');
 
 // Server
 
+const router = express.Router();
+
 server.get('/', function(req, res) {
   Note.find()
     .then(notes => {
@@ -45,9 +47,22 @@ server.get('/', function(req, res) {
     });
 });
 
+server.get('/:id', function(req, res) {
+  const { id } = req.params;
+  Note.findById(id)
+    .then(note => {
+      if (note === null) {
+        return res.status(404).json({ error: 'This note does not exist!' });
+      }
+      res.status(200).json(note);
+    })
+    .catch(error => {
+      res.status(500).json(error);
+    });
+});
+
 server.post('/post', (req, res) => {
   const note = new Note(req.body);
-
   note
     .save()
     .then(savedNote => {
