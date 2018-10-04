@@ -44,7 +44,14 @@ class Notes extends Component {
         <CardContainer styledcolor>
           <Row innercard>
             {this.state.note.map((note, i) => {
-              return <Cards title={note.title} text={note.body} key={i} />;
+              return (
+                <Cards
+                  title={note.title}
+                  text={note.body}
+                  id={note._id}
+                  key={i}
+                />
+              );
             })}
           </Row>
         </CardContainer>

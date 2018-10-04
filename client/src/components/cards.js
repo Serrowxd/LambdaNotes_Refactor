@@ -1,5 +1,12 @@
 import React, { Component, Fragment } from 'react';
-import { Card, CardHeader, CardBody, CardText, Button } from 'reactstrap';
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardText,
+  CardFooter,
+  Button,
+} from 'reactstrap';
 
 class Cards extends Component {
   constructor(props) {
@@ -38,6 +45,7 @@ class Cards extends Component {
               Delete
             </Button>
           </div>
+          <CardFooter>{this.props.id}</CardFooter>
         </Card>
       </Fragment>
     );

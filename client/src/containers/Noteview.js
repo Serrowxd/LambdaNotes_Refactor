@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Row, Navigation, Notes, Daily } from '../reducer';
+import { Row, Navigation, Notes, Daily, EditNote } from '../reducer';
 
 const Noteview = () => {
   return (

@@ -6,6 +6,8 @@ import Daily from './components/daily';
 import CalendarView from './components/calendar';
 import Settings from './components/settings';
 import Account from './components/account';
+import EditNote from './components/editNote';
+import CreateNote from './components/createNote';
 
 // Containers
 import Noteview from './containers/Noteview';
@@ -41,6 +43,8 @@ export {
   CalendarView,
   Settings,
   Account,
+  EditNote,
+  CreateNote,
   // Styles
   Container,
   Column,

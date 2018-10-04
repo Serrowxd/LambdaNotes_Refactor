@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Container, Landing, StateNotes } from './reducer';
+import {
+  Container,
+  Landing,
+  StateNotes,
+  EditNote,
+  CreateNote,
+} from './reducer';
 
 class App extends Component {
   constructor(props) {
@@ -24,9 +30,13 @@ class App extends Component {
       <Container>
         <Route exact path="/" component={Landing} />
         <Route path="/notes" component={StateNotes} />
+        <Route path="/create" components={CreateNote} />
+        <Route path="/edit" component={EditNote} />
       </Container>
     );
   }
 }
 
 export default App;
+
+// Notes are probably not going to be basedd on routes, instead I'll do them by state.
