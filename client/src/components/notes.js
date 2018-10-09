@@ -28,11 +28,20 @@ class Notes extends Component {
     }
   }
 
+  noteUpdate() {
+    axios.get(`http://localhost:5500/`).then(res => {
+      const note = res.data;
+      this.setState({ note });
+    });
+  }
+
   componentDidMount() {
     axios.get(`http://localhost:5500/`).then(res => {
       const note = res.data;
       this.setState({ note });
     });
+    // setInterval(this.noteUpdate, 3000);
+    // I like this set-interval, but I feel like there's a better way of checking it.
   }
 
   render() {
