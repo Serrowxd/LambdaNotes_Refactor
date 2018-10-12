@@ -8,6 +8,7 @@ import Settings from './components/settings';
 import Account from './components/account';
 import EditNote from './components/editNote';
 import CreateNote from './components/createNote';
+import NewCard from './components/newCard';
 
 // Containers
 import Noteview from './containers/Noteview';
@@ -45,6 +46,7 @@ export {
   Account,
   EditNote,
   CreateNote,
+  NewCard,
   // Styles
   Container,
   Column,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Column, CardContainer, Row, Cards } from '../reducer';
+import { Column, CardContainer, Row, Cards, NewCard } from '../reducer';
 import { cardsdata } from '../data/notes';
 import axios from 'axios';
 
@@ -62,6 +62,7 @@ class Notes extends Component {
                 />
               );
             })}
+            <NewCard />
           </Row>
         </CardContainer>
       </Column>
