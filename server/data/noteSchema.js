@@ -4,12 +4,10 @@ const noteSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    lowercase: true,
   },
   body: {
     type: String,
     required: true,
-    lowercase: true,
   },
 });
 

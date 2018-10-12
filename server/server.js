@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 // Local Routes
 
-mongoose.connect('mongodb://localhost:27017/lambda-notes');
+mongoose.connect('mongodb://localhost/notes');
 
 // Server
 const server = express();

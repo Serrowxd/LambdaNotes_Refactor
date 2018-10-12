@@ -41,6 +41,16 @@ export const Row = styled.div`
     `};
 
   ${props =>
+    props.createcard &&
+    css`
+      display: flex;
+      margin-left: 5%;
+      margin-top: 2%;
+      width: 95%;
+      justify-content: center;
+    `};
+
+  ${props =>
     props.alignme &&
     css`
       justify-content: center;
@@ -187,4 +197,30 @@ export const SignInput = styled.input`
       width: 10rem;
       border-radius: 10px;
     `};
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 2%;
+
+  input {
+    width: 40%;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    width: 80%;
+    height: 40vh;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  h1 {
+    color: red;
+  }
 `;

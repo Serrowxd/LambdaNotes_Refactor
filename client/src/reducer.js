@@ -29,6 +29,7 @@ import {
   LandingRow,
   LandingRender,
   SignInput,
+  Form,
 } from './styles/styles';
 
 export {
@@ -57,6 +58,7 @@ export {
   LandingRow,
   LandingRender,
   SignInput,
+  Form,
   // Test
   StateNotes,
 };
