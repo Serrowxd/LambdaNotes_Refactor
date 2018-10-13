@@ -148,6 +148,15 @@ export const Button = styled.button`
     background-size: 100%;
     transition: background 0s;
   }
+
+  ${props =>
+    props.smolButton &&
+    css`
+      position: relative;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 2rem;
+    `};
 `;
 
 export const LandingRow = styled.div`

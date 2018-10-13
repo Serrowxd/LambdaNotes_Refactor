@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Column, CardContainer, Row, Cards, Form } from '../reducer';
+import { Column, CardContainer, Row, Cards, Form, Button } from '../reducer';
 import { cardsdata } from '../data/notes';
 import axios from 'axios';
 
@@ -132,6 +132,9 @@ class Notes extends Component {
                   <input type="submit" onClick={this.pageReload} />
                   <h1>{this.state.saving}</h1>
                 </Form>
+                <Button smolButton onClick={this.toggleClass}>
+                  X
+                </Button>
               </Row>
             </CardContainer>
           </Column>
