@@ -8,7 +8,10 @@ const mongoose = require('mongoose');
 
 // Local Routes
 
-mongoose.connect('mongodb://localhost/notes');
+// mongoose.connect('mongodb://localhost/notes');
+mongoose.connect(
+  'mongodb://admin:adminpass1@ds125953.mlab.com:25953/notedadmin:adminpass1@ds125953.mlab.com:25953/noted'
+);
 
 // Server
 const server = express();
