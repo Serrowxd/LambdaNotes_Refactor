@@ -40,7 +40,7 @@ const Note = require('./data/noteSchema.js');
 
 const router = express.Router();
 
-server.get('/', function(req, res) {
+server.get('/api/get', function(req, res) {
   Note.find()
     .then(notes => {
       res.json(notes);
@@ -50,7 +50,7 @@ server.get('/', function(req, res) {
     });
 });
 
-server.get('/:id', function(req, res) {
+server.get('/api/:id', function(req, res) {
   const { id } = req.params;
   Note.findById(id)
     .then(note => {
@@ -64,7 +64,7 @@ server.get('/:id', function(req, res) {
     });
 });
 
-server.post('/post', (req, res) => {
+server.post('/api/post', (req, res) => {
   const note = new Note(req.body);
   note
     .save()
