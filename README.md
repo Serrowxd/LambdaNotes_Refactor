@@ -22,6 +22,8 @@ A new and improved Lambda Notes done post-graduation from Lambda.
 - Find a way to render content inside `containedview`, right now it's just labeled as `{this.props.content}` and that's not going to work when I'm rendering larger bits like entire components.
 - **RESEARCH HIGHER ORDER COMPONENTS AND RENDER PROPS**
 
+- **DEPLOYMENT** Currently broken on deployment, will need to modify the code to work both in local and deployment states based on production/non-production environments.
+
 # ToDo
 
 - **Features:**
