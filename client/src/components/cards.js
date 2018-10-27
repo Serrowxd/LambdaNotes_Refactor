@@ -14,13 +14,16 @@ class Cards extends Component {
     this.state = {
       lorge: false,
     };
-    this.toggleClass = this.toggleClass.bind(this);
   }
 
-  toggleClass() {
+  toggleClass = () => {
     let currenState = this.state.lorge;
     this.setState({ lorge: !currenState });
-  }
+  };
+
+  confirmDelete = () => {
+    window.alert('Note Deleted');
+  };
 
   render() {
     return (
@@ -41,6 +44,7 @@ class Cards extends Component {
             </Button>
             <Button
               className={this.state.lorge ? 'styledbutton' : 'hidebutton'}
+              onClick={this.confirmDelete}
             >
               Delete
             </Button>

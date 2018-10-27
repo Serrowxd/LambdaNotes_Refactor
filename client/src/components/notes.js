@@ -42,6 +42,10 @@ class Notes extends Component {
     });
   }
 
+  // noteDelete = () => {
+  //   axios.delete(`http://localhost:5500/${id}`).then(res => {});
+  // };
+
   handleSubmit(e) {
     e.preventDefault();
     const { title, body } = this.state;

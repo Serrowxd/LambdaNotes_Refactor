@@ -76,7 +76,16 @@ server.post('/post', (req, res) => {
 
 server.put('/:id', (req, res) => {});
 
-server.delete('/:id', (req, res) => {});
+server.delete('/:id', (req, res) => {
+  const { id } = req.params;
+  let note;
+
+  Note.findByIdAndRemove(id)
+    .then(res => {
+      res.status(200).json({ id });
+    })
+    .catch(err => res.status(400).json(err));
+});
 
 server.listen(port, () =>
   console.log(`d-(OvO")z up and running on port ${port}`)
