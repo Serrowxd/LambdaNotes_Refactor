@@ -5,14 +5,14 @@ const port = 5500;
 const path = require('path');
 const express = require('express');
 
-server.use(express.static(path.join(__dirname, 'client/build')));
-server.get('*', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/client/build/index.html`));
-});
+// server.use(express.static(path.join(__dirname, 'client/public')));
+// server.get('*', (req, res) => {
+//   res.sendFile(path.join(`${__dirname}/client/build/index.html`));
+// });
 
 mongoose.connect(
-  // 'mongodb://localhost/notes',
-  'mongodb://admin:adminpass1@ds125953.mlab.com:25953/noted',
+  'mongodb://localhost/notes',
+  // 'mongodb://admin:adminpass1@ds125953.mlab.com:25953/noted',
   {},
   err => {
     if (err) return console.log(err);

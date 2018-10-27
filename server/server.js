@@ -8,8 +8,8 @@ const mongoose = require('mongoose');
 
 // Local Routes
 
-// mongoose.connect('mongodb://localhost/notes');
-mongoose.connect('mongodb://admin:adminpass1@ds125953.mlab.com:25953/noted');
+mongoose.connect('mongodb://localhost/notes');
+// mongoose.connect('mongodb://admin:adminpass1@ds125953.mlab.com:25953/noted');
 
 // Server
 const server = express();
@@ -38,7 +38,7 @@ const Note = require('./data/noteSchema.js');
 
 const router = express.Router();
 
-server.get('/api/get', function(req, res) {
+server.get('/get', function(req, res) {
   Note.find()
     .then(notes => {
       res.json(notes);
@@ -48,7 +48,7 @@ server.get('/api/get', function(req, res) {
     });
 });
 
-server.get('/api/:id', function(req, res) {
+server.get('/:id', function(req, res) {
   const { id } = req.params;
   Note.findById(id)
     .then(note => {
@@ -62,7 +62,7 @@ server.get('/api/:id', function(req, res) {
     });
 });
 
-server.post('/api/post', (req, res) => {
+server.post('/post', (req, res) => {
   const note = new Note(req.body);
   note
     .save()

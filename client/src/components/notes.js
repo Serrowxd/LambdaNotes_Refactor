@@ -26,7 +26,7 @@ class Notes extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:5500/`).then(res => {
+    axios.get(`http://localhost:5500/get`).then(res => {
       const note = res.data;
       this.setState({ note });
     });
@@ -129,7 +129,11 @@ class Notes extends Component {
                     className="lorge"
                     onChange={this.inputChangeHandler}
                   />
-                  <input type="submit" onClick={this.pageReload} />
+                  <input
+                    type="submit"
+                    onClick={this.pageReload}
+                    value="Save Note"
+                  />
                   <h1>{this.state.saving}</h1>
                 </Form>
                 <Button smolButton onClick={this.toggleClass}>
